@@ -61,7 +61,7 @@
   }
   
   
-  /*Bem-vindo*/
+  /*Welcome*/
   #welcome-section{
     height: 100vh;
     background-color: var(--color1);
@@ -85,7 +85,7 @@
   }
   
   
-  /*Sobre mim*/
+  /*About me*/
   #about-me{
     margin: 0;
     background-color: var(--color4);
@@ -115,11 +115,11 @@
     grid-area: lists;
     padding: 60px;
   }
-  #fotoperfil{
+  .profile{
+    text-align: center;
+  }
+  #photo{
     width: 420px;
-    position: relative;
-    top: -40px;
-    left: 100px;
     border-bottom: 12px solid var(--color5);
   }
   #lists h3{
@@ -139,7 +139,7 @@
   }
   
   
-  /*Projetos*/
+  /*Projects*/
   #projects{
     background-color: var(--color3);
     padding: 40px;
@@ -168,7 +168,7 @@
   }
   
   
-  /*Contato*/
+  /*Contact*/
   #contact{
     height: 90vh;
     background-color: var(--color1);
@@ -211,3 +211,14 @@
     padding: 20px;
   }
   
+  /*Responsiveness*/
+@media (max-width: 1200px){
+    #navbar{
+        width: 100%;
+        font-size: 26px;
+    }
+    #about-me{
+        display: flex;
+        flex-direction: column;
+    }
+}
