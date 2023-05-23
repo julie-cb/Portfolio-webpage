@@ -1,0 +1,213 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  /*color palettes*/
+  :root{
+    --color1: #606c38;
+    --color2: #283618;
+    --color3: #fefae0;
+    --color4: #dda15e;
+    --color5: #bc6c25;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    position: absolute;
+    z-index: -1;
+  }
+  h1{
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+  /*Navigation bar*/
+  #navbar{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color3);
+    font-family: Oswald;
+    font-size: 22px;
+  }
+  #navbar ul{
+    display: flex;
+  }
+  #navbar ul li{
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+  } 
+  #navbar ul li a{
+    text-decoration: none;
+    color: var(--color4);
+  } 
+  #navbar ul li a:hover{
+    cursor: pointer;
+    background-color: var(--color4);
+    color: var(--color5);
+    border-radius: 20px;
+    padding: 3.5px;
+  }
+  
+  
+  /*Bem-vindo*/
+  #welcome-section{
+    height: 100vh;
+    background-color: var(--color1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #welcome-section > h1{
+    color: var(--color3);
+    font-size: 80px;
+    margin: 0 auto;
+    font-family: Oswald;
+  }
+  #welcome-section > p{
+    color: var(--color2);
+    margin-top: 15px;
+    font-size: 35px;
+    font-family: Raleway;
+    font-style: italic;
+  }
+  
+  
+  /*Sobre mim*/
+  #about-me{
+    margin: 0;
+    background-color: var(--color4);
+    display: grid;
+    grid-template-areas:
+  "text lists"
+  "end end";
+    grid-template-rows: 1fr 110px;
+    grid-template-columns: 1fr 1fr;
+     font-family: Raleway;
+     font-size: 22px;
+     color: var(--color3);
+  } 
+  #title{
+    color: var(--color5);
+    font-family: Oswald;
+    font-size: 40px;
+  }
+  #text{
+    grid-area: text;
+    padding: 80px;
+    margin-top: 0;
+    text-indent: 40px;
+  }
+  
+  #lists{
+    grid-area: lists;
+    padding: 60px;
+  }
+  #fotoperfil{
+    width: 420px;
+    position: relative;
+    top: -40px;
+    left: 100px;
+    border-bottom: 12px solid var(--color5);
+  }
+  #lists h3{
+     color: var(--color5);
+     text-align: center;
+     font-family: Oswald;
+     font-size: 30px;
+  }
+  #end{
+    grid-area: end;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--color1);
+    padding: 12.5px;
+    text-align: center;
+  }
+  
+  
+  /*Projetos*/
+  #projects{
+    background-color: var(--color3);
+    padding: 40px;
+  }
+  #projects-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #projects h1{
+    color: var(--color5);
+     text-align: center;
+     font-family: Oswald;
+     font-size: 40px;
+  }
+  .butproj{
+    width: 250px;
+    height:300px;
+    margin: 20px;
+    font-family: Raleway;
+    font-size: 18px;
+  }
+  .back{
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+  
+  
+  /*Contato*/
+  #contact{
+    height: 90vh;
+    background-color: var(--color1);
+    color: var(--color3); 
+  }
+  #contact h1{
+    color: var(--color5);
+    font-size: 60px;
+    padding-top: 70px;
+    text-align: center;
+    font-family: Oswald;
+  }
+  #contact p{
+    color: var(--color2);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  #contact a{
+    text-decoration: none;
+    color: var(--color3);
+    font-family: Raleway;
+    font-size: 25px;
+    padding: 10px;
+  }
+  #contacts-div{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contacts-div a:hover{
+    cursor: pointer;
+    background-color: var(--color5);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
